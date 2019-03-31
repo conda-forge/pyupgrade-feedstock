@@ -1,7 +1,3 @@
-<!--
-# -*- mode: jinja -*-
--->
-
 About pyupgrade
 ===============
 
@@ -18,8 +14,14 @@ Summary: A tool to automatically upgrade syntax for newer versions.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/pyupgrade-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/pyupgrade-feedstock)
+
+<table><tr>
+    <td>All platforms:</td>
+    <td>
+      <img src="https://img.shields.io/badge/noarch-disabled-lightgrey.svg" alt="noarch disabled">
+    </td>
+  </tr>
+</table>
 
 Current release info
 ====================
