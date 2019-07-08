@@ -1,5 +1,5 @@
 {% set name = "pyupgrade" %}
-{% set version = "1.18.0" %}
+{% set version = "1.20.1" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,10 +7,9 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a49823833ee5f524dc27754a851b8907a630c49bc30471325fe7c65aef8a1107
+  sha256: c99176f3ed7f38c1a9750d062864c3b97d4f7d3cb46fcedcd24bbda1e7d797b3
 
-build:
-  noarch: python
+build:  
   number: 0
   entry_points:
     - pyupgrade = pyupgrade:main
@@ -23,7 +22,8 @@ requirements:
     - setuptools
   run:
     - python
-    - tokenize-rt >=2.1
+    - typing  # [py27]
+    - tokenize-rt >=3.2.0
 
 test:
   commands:
