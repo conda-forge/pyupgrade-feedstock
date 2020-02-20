@@ -18,11 +18,10 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
     - setuptools
   run:
-    - python
-    - typing  # [py27]
+    - python >=3.6    
     - tokenize-rt >=3.2.0
 
 test:
