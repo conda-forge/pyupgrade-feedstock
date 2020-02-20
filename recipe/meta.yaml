@@ -10,6 +10,7 @@ source:
   sha256: 45df21f34b58f41945a8da76c413e3e585fe93d1676ed7d6e7e28061956d56d9
 
 build:  
+  noarch: python
   number: 0
   entry_points:
     - pyupgrade = pyupgrade:main
