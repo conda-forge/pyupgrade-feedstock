@@ -1,5 +1,6 @@
-    
 provider:
   linux: azure
   osx: azure
   win: azure
+bot:
+  automerge: true
