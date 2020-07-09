@@ -5,7 +5,7 @@ Home: https://github.com/asottile/pyupgrade
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A tool to automatically upgrade syntax for newer versions.
 
