@@ -1,5 +1,5 @@
 {% set name = "pyupgrade" %}
-{% set version = "2.7.4" %}
+{% set version = "2.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,22 +7,22 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e57057ccef3fd8e8fad5ba9f365c1288a076271a222ccb502d865c0d8fe16c3a
+  sha256: b23f80e3c337ebb45e9ed846926f22fab1d990de319bc9e72dccbac33115d412
 
 build:
   noarch: python
   number: 0
   entry_points:
-    - pyupgrade = pyupgrade:main
+    - pyupgrade = pyupgrade._main:main
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.6.1
     - setuptools
   run:
-    - python >=3.6
+    - python >=3.6.1
     - tokenize-rt >=3.2.0
 
 test:
