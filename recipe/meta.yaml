@@ -1,5 +1,5 @@
 {% set name = "pyupgrade" %}
-{% set version = "2.32.0" %}
+{% set version = "2.32.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6878116d364b72f0c0011dd62dfe96425041a5f753da298b6eacde0f9fd9c004
+  sha256: 11e2c3e4e2e53a61b2d8852ed154ea5683887b6ac42561622ca8d89c94fd951a
 
 build:
   noarch: python
