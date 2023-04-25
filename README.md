@@ -1,11 +1,11 @@
-About pyupgrade
-===============
+About pyupgrade-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyupgrade-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/asottile/pyupgrade
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pyupgrade-feedstock/blob/main/LICENSE.txt)
 
 Summary: A tool to automatically upgrade syntax for newer versions.
 
