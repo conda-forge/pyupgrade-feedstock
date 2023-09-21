@@ -1,5 +1,5 @@
 {% set name = "pyupgrade" %}
-{% set version = "3.11.1" %}
+{% set version = "3.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3e6c7689d2f3ae418c6a60ee981477fe9130eccaed3e33dac6c21274cf7d45f4
+  sha256: defc292ffaf402942b8fccaa97491964063e343fc1993230e44890b971dc1234
 
 build:
   noarch: python
@@ -19,11 +19,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6.1
+    - python >=3.8.1
     - setuptools
   run:
-    - python >=3.6.1
-    - tokenize-rt >=3.2.0
+    - python >=3.8.1
+    - tokenize-rt >=5.2.0
 
 test:
   commands:
