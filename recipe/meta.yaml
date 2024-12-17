@@ -1,13 +1,13 @@
 {% set name = "pyupgrade" %}
-{% set version = "3.19.0" %}
+{% set version = "3.19.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7ed4b7d972ed2788c43994f4a24f949d5bf044342992f3b48e1bed0092ddaa01
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: d10e8c5f54b8327211828769e98d95d95e4715de632a3414f1eef3f51357b9e2
 
 build:
   noarch: python
